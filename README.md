@@ -32,7 +32,7 @@ open it in the browser.
     python modules/rest.py
     blogofile serve 8000
 
-### Runing tests
+### Running tests
     
     workon getpython3
     cdvirtualenv
