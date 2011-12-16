@@ -25,7 +25,13 @@ class Converter(object):
         except (TokenError, ParseError) as e:
             res["py3"] = ""
             res["error"] = unicode(e)
-        return json.dumps(res)
+        js = json.dumps(res)
+
+        callback = web.input(callback = "").callback
+        if callback:
+            return callback + "(" + js + ")"
+
+        return js
 
 
 def convert(code):
