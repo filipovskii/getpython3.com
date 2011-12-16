@@ -44,6 +44,8 @@ ${self.support()}
 
 ${self.findprojects()}
 
+${self.sandbox()}
+
 ${self.resources()}
 
 <p class="alert-message block-message info">Source code to this site available
@@ -71,6 +73,10 @@ ${self.resources()}
 
 <%def name="findprojects()">
   <%include file="sections/findprojects.mako" />
+</%def>
+
+<%def name="sandbox()">
+    <%include file="sections/sandbox.mako" />
 </%def>
 
 <%def name="resources()">
