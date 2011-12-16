@@ -27,7 +27,6 @@ and proccess **GET** requests for url `http://localhost:8080/convert`.
 To try in-browser code convertion, start **blogofile** on any other port,
 open it in the browser.
 
-For example:
     workon getpython3
     cdvirtualenv
     python modules/rest.py
