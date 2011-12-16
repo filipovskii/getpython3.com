@@ -19,8 +19,22 @@ During development, it may be easier to use less.js which will compile the less 
 ### Working with rest api
 Rest api requires web.py module.
 
+    workon getpython3
     pip install web.py
+
+Once installed, you can start server, that will accept
+and proccess **GET** requests for url `http://localhost:8080/convert`.
+To try in-browser code convertion, start **blogofile** on any other port,
+open it in the browser.
+
+For example:
+    workon getpython3
+    cdvirtualenv
+    python modules/rest.py
+    blogofile serve 8000
 
 ### Runing tests
     
+    workon getpython3
+    cdvirtualenv
     ./run-tests.sh
